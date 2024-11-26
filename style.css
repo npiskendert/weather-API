@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Poppins, sans-serif;
+  box-sizing: border-box;
+}
+body {
+  background: #222;
+}
+
+.weather-container {
+  width: 90%;
+  max-width: 470px;
+  color: #fff;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+  text-align: center;
+  margin: 20px auto 0;
+  border-radius: 20px;
+  padding: 5px;
+}
+.search-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.search-container input {
+  border: 0;
+  outline: 0;
+  width: 380px;
+  padding: 10px;
+  margin: 5px;
+  background: #ebfffc;
+  color: #555;
+  font-size: 20px;
+  margin-left: 10px;
+  border-radius: 30px;
+}
+
+.search-container img {
+  background: transparent;
+  width: 40px;
+}
+.search-container img:hover {
+  cursor: pointer;
+}
+#city-name {
+  font-size: 40px;
+  font-weight: bold;
+}
+#temperature {
+  font-size: 35px;
+  font-weight: bold;
+}
+#description {
+  margin: 5px 0;
+}
+.details {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  padding: 5px;
+}
+
+.col img {
+  width: 30px;
+  padding: auto;
+  margin-right: 5px;
+}
+.suntime {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.progress {
+  width: 200px;
+  height: 10px;
+  border-radius: 50px;
+  margin: auto;
+  background-color: #222;
+  background-image: linear-gradient(
+    to right,
+    green,
+    rgb(120, 216, 120),
+    yellow,
+    orange,
+    red,
+    rgb(124, 20, 20)
+  );
+}
+.progress-done {
+  background-color: black;
+  height: 10px;
+  width: 3%;
+  border-radius: 50px;
+  position: relative;
+  left: 0px;
+}
+.change {
+  margin-top: 10px;
+}
+
+#aqi {
+  font-weight: bold;
+  font-size: 16px;
+  margin: 6px;
+}
+.air-quality {
+  margin: 10px;
+}
+.air-quality h6 {
+  font-weight: lighter;
+}
+#hourly-forecast {
+  margin: 20px 0px;
+  overflow-x: auto;
+  white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+}
+.hourly-item {
+  flex: 0 0 auto;
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px;
+  color: white;
+}
+
+.hourly-item img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+#hourly-heading {
+  color: #fff;
+  margin-top: 10px;
+}
+.weather-container.sunny {
+  background: linear-gradient(
+    120deg,
+    rgba(134, 189, 241, 1) 0%,
+    rgba(39, 169, 230, 1) 50%,
+    rgba(31, 222, 224, 1) 100%
+  );
+}
+
+/* Add a subtle glowing animation to the sunny background */
+
+.weather-container.cloudy {
+  background: linear-gradient(to bottom, #b0bec5, #78909c, #546e7a);
+  background-size: cover;
+}
+
+.weather-container.snowy {
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-size: cover;
+}
